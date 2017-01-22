@@ -98,7 +98,7 @@ var saveAs=saveAs||navigator.msSaveBlob&&navigator.msSaveBlob.bind(navigator)||f
 		<div id="init-lacking">Your browser lacks required capabilities. Please upgrade it or switch to another to continue.</div>
 		<div id="init-loading"><div>Loading&hellip;</div></div>
 	</div>
-	<div id="store-area" hidden><tw-storydata name="SPACE ALERT" startnode="1" creator="Twine" creator-version="2.0.11" ifid="C7E22560-3152-43B9-AB9C-CA03F111C781" format="SugarCube 2 (local/offline)" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">.hideme {
+	<div id="store-area" hidden><tw-storydata name="SPACE ALERT" startnode="24" creator="Twine" creator-version="2.0.11" ifid="C7E22560-3152-43B9-AB9C-CA03F111C781" format="SugarCube 2 (local/offline)" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">.hideme {
 	display: none;
 }
 
@@ -249,7 +249,7 @@ You take a second to take a deep breath before you are interrupted by a small bl
 
 &lt;&lt;timedinsert 2s&gt;&gt;
 “Do you know of the concept of multiple dimensions?  We both know about the three dimensions of space but did you know there is another dimension? We call it “TIME.”“
-&lt;&lt;end timedinsert&gt;&gt;
+&lt;&lt;endtimedinsert&gt;&gt;
 
 &lt;&lt;timedinsert 3s&gt;&gt;
 [[Oh-&gt;blah1]] / [[Right-&gt;blah1]] / [[And...?-&gt;blah1]]
@@ -317,10 +317,14 @@ You take a second to take a deep breath before you are interrupted by a small bl
 <tw-passagedata pid="21" name="That guy sounds great, where’s he at?" tags="" position="1103,101">“Seriously?” the little alien ask incredulously?  A door flies open out of a nearby building and a bipedal cat-alien wearing what appears to be sunglasses bursts out.
 
 &lt;&lt;timedinsert 2s&gt;&gt;
+&lt;&lt;shake&gt;&gt;
 “YO YO YO ITS ME THE LO-CAT-ION AND I’M ON THE CASE,
+&lt;&lt;/shake&gt;&gt;
 &lt;&lt;endtimedinsert&gt;&gt;
 &lt;&lt;timedinsert 4s&gt;&gt;
+&lt;&lt;shake&gt;&gt;
 CHECK OUT MY INCREDIBLE POWERS OF MOVING THROUGH SPACE!”
+&lt;&lt;/shake&gt;&gt;
 &lt;&lt;endtimedinsert&gt;&gt;
 
 &lt;&lt;timedinsert 6s&gt;&gt;
@@ -333,12 +337,14 @@ CHECK OUT MY INCREDIBLE POWERS OF MOVING THROUGH SPACE!”
 <tw-passagedata pid="23" name="yeah2" tags="" position="925,218">“Ah nice!!” It does an alien fist pump and starts jogging toward your ship.
 
 [[Follow it]]</tw-passagedata>
-<tw-passagedata pid="24" name="more raps" tags="" position="1266,99">&lt;&lt;timedinsert 1s&gt;&gt;
+<tw-passagedata pid="24" name="more raps" tags="" position="1266,99">&lt;&lt;shake&gt;&gt;
+&lt;&lt;timedinsert 1s&gt;&gt;
 “HEY I SEE A NEW KID UP HERE IN THIS SITCH, Y’ALL,
 &lt;&lt;endtimedinsert&gt;&gt;
 &lt;&lt;timedinsert 3s&gt;&gt;
 BEHOLD MY KNOWLEDGE OF MATTERS TOPOLOGICAL”
 &lt;&lt;endtimedinsert&gt;&gt;
+&lt;&lt;/shake&gt;&gt;
 
 &lt;&lt;timedinsert 5s&gt;&gt;
 [[leave as fast as you can]] / [[Take the Chrongon and leave]] / [[leave with this new guy]]
@@ -347,17 +353,20 @@ BEHOLD MY KNOWLEDGE OF MATTERS TOPOLOGICAL”
 
 From behind you, you hear
 
+&lt;&lt;shake&gt;&gt;
 &lt;&lt;timedinsert 4s&gt;&gt;
 “WAIT FRIEND COME BACK, I DON’T MEAN TO CHASE,
 &lt;&lt;endtimedinsert&gt;&gt;
 &lt;&lt;timedinsert 6s&gt;&gt;
 LET ME TELL YOU ABOUT HOW I CAN CHANGE PLACE”
 &lt;&lt;endtimedinsert&gt;&gt;
+&lt;&lt;/shake&gt;&gt;
 
 &lt;&lt;timedinsert 8s&gt;&gt;
 [[Run to your ship-&gt;Follow it]]
 &lt;&lt;endtimedinsert&gt;&gt;</tw-passagedata>
 <tw-passagedata pid="26" name="leave with this new guy" tags="" position="1437,99">
+&lt;&lt;shake&gt;&gt;
 &lt;&lt;timedinsert 1s&gt;&gt;
 “YEAH ME AND MY BUD TRAVELING THROUGH THE STARS,
 &lt;&lt;endtimedinsert&gt;&gt;
@@ -370,18 +379,21 @@ I CAN’T WAIT TO SEE WHAT WE’RE GONNA SEE,
 &lt;&lt;timedinsert 7s&gt;&gt;
 LET’S GO EXPLORING JUST YOU, MY GLASSES AND ME”
 &lt;&lt;endtimedinsert&gt;&gt;
+&lt;&lt;/shake&gt;&gt;
 
 &lt;&lt;timedinsert 9s&gt;&gt;
 [[One Year Later]]
 &lt;&lt;endtimedinsert&gt;&gt;</tw-passagedata>
 <tw-passagedata pid="27" name="leave as fast as you can" tags="" position="1327,268">You turn around and leave as quickly as you can.  From behind, you hear
 
+&lt;&lt;shake&gt;&gt;
 &lt;&lt;timedinsert 4s&gt;&gt;
 “WAIT FRIEND COME BACK, I DON’T MEAN TO CHASE,
 &lt;&lt;endtimedinsert&gt;&gt;
 &lt;&lt;timedinsert 6s&gt;&gt;
 LET ME TELL YOU ABOUT HOW I CAN CHANGE PLACE”
 &lt;&lt;endtimedinsert&gt;&gt;
+&lt;&lt;/shake&gt;&gt;
 
 &lt;&lt;timedinsert 8s&gt;&gt;
 [[nope-&gt;Walk back to your ship alone]]
@@ -392,7 +404,7 @@ LET ME TELL YOU ABOUT HOW I CAN CHANGE PLACE”
 <tw-passagedata pid="29" name="One Year Later" tags="" position="1598,99">You and the Lo-cat-tion are married and traveling through the stars, yelling at people and rapping poorly.  Life is good.
 
 &lt;&lt;timedinsert 2s&gt;&gt;
-&lt;img src=&quot;http://i.imgur.com/0jDrgla.gif&quot;&gt;&lt;/img&gt;
+&lt;img src=&quot;http://i.imgur.com/0jDrgla.gif&quot;&gt;
 
 ~The End~
 &lt;&lt;endtimedinsert&gt;&gt;</tw-passagedata>
