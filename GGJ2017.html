@@ -16,6 +16,7 @@ GGJ
 
 
 
+
 </style><script role="script" id="twine-user-script" type="text/twine-javascript">var DEBUG = true;
 
 
@@ -178,6 +179,7 @@ if(DEBUG){
 	story.state.raul_visits = 1;
 }
 
+
 </script><tw-passagedata pid="1" name="Bridge" tags="ship" position="496,49">
 You are on the ships bridge. The dusty stench of a wonky AC unit emanates from the vents. Raul Pyan is still waiting for your aid.
 
@@ -185,9 +187,10 @@ You are on the ships bridge. The dusty stench of a wonky AC unit emanates from t
 
 [[Suite up in the Armory|Armory]]</tw-passagedata>
 <tw-passagedata pid="2" name="PrimeDirectives" tags="dontsave inv" position="141,65">
-1.
-2.
-3.
+## Resolution &lt;%= Math.floor(Math.random() * 10000) %&gt;: Establish Prime Directives
+### Status: In Commitee
+
+Please check back later
 
 &lt;%= s.generateLink(s.currFrame, &quot;Back&quot;) %&gt;</tw-passagedata>
 <tw-passagedata pid="3" name="Armory" tags="dontsave ship" position="353,300">&lt;script&gt;
@@ -564,7 +567,9 @@ There is a table where an alient teen holds court. He sits in a leather chair at
 		story.show(&#39;Godfather&#39;);
 	}
 &lt;/script&gt;</tw-passagedata>
-<tw-passagedata pid="17" name="WinState" tags="" position="218,561">A Winner is You!</tw-passagedata>
+<tw-passagedata pid="17" name="WinState" tags="" position="218,561">A Winner is You!
+
+&lt;a href=&quot;/&quot;&gt;Back to Chapter Select&lt;/a&gt;</tw-passagedata>
 <tw-passagedata pid="18" name="FinalShowDown" tags="" position="491,544">&quot;Excellent!&quot; Raul exlaims, &quot;The tyranny of taxation is over!&quot;
 
 &quot;Wait, I just answered an intergalactic distress signal to black mail a mayor to end eliminate taxation in your municipality.&quot;
