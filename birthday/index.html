@@ -7,6 +7,7 @@
             font-family: Arial, sans-serif;
             font-size: 18px;
             line-hight: 1.8;
+            cursor: url('sword.png'), crosshair;
         }
 
         h1 {
@@ -15,7 +16,6 @@
         }
         .marquee {
             width: 100%;
-            line-height: 50px;
             color: #ff0000;
             white-space: nowrap;
             overflow: hidden;
@@ -31,7 +31,13 @@
         <center>
             <h1 style="color: #f5ec42" class="blink">!!! ATTENTION !!!</h1>
             <div class="marquee marquee-left">BIRTHDAY PARTY INCOMING BIRTHDAY PARTY INCOMING BIRTHDAY PARTY INCOMING BIRTHDAY PARTY INCOMING BIRTHDAY PARTY INCOMING BIRTHDAY PARTY INCOMING BIRTHDAY PARTY INCOMING BIRTHDAY PARTY INCOMING BIRTHDAY PARTY INCOMING</div>
+
+            <div>
+            <img src="babygif.webp">
             <img src="peter.jpg" alt="Peter" width="300" height="400">
+            <img src="babygif.webp">
+            </div>
+
             <div class="marquee marquee-right">BIRTHDAY PARTY INCOMING BIRTHDAY PARTY INCOMING BIRTHDAY PARTY INCOMING BIRTHDAY PARTY INCOMING BIRTHDAY PARTY INCOMING BIRTHDAY PARTY INCOMING BIRTHDAY PARTY INCOMING BIRTHDAY PARTY INCOMING BIRTHDAY PARTY INCOMING</div>
             <div style="background-color: #000; max-width: 50em; text-align: left; padding: 1em;">
                 <h2 style="text-align:center;">I am turning 35*</h2>
@@ -94,5 +100,13 @@
     for(var i = 0; i < right.length; i++) {
         marquee(right[i], false);
     }
+    let started = false;
+    document.addEventListener('click', () => {
+        if(!started) {
+            started = true;
+            var audio = new Audio('rx.mp3');  
+            audio.play();
+        }
+    });
     </script>
 </html>
