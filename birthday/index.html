@@ -1,0 +1,98 @@
+<html>
+    <head>
+        <title>Peter's 35th Birthday</title>
+        <style>
+
+        body {
+            font-family: Arial, sans-serif;
+            font-size: 18px;
+            line-hight: 1.8;
+        }
+
+        h1 {
+            font-size: 36;
+            font-weight: bold;
+        }
+        .marquee {
+            width: 100%;
+            line-height: 50px;
+            color: #ff0000;
+            white-space: nowrap;
+            overflow: hidden;
+            background-color: #000000;
+        }
+        p {
+            margin: 1em;
+        }
+        </style>
+    </head>
+
+    <body bgcolor="#000000" background="bg_stars.gif" text="#ff0000">
+        <center>
+            <h1 style="color: #f5ec42" class="blink">!!! ATTENTION !!!</h1>
+            <div class="marquee marquee-left">BIRTHDAY PARTY INCOMING BIRTHDAY PARTY INCOMING BIRTHDAY PARTY INCOMING BIRTHDAY PARTY INCOMING BIRTHDAY PARTY INCOMING BIRTHDAY PARTY INCOMING BIRTHDAY PARTY INCOMING BIRTHDAY PARTY INCOMING BIRTHDAY PARTY INCOMING</div>
+            <img src="peter.jpg" alt="Peter" width="300" height="400">
+            <div class="marquee marquee-right">BIRTHDAY PARTY INCOMING BIRTHDAY PARTY INCOMING BIRTHDAY PARTY INCOMING BIRTHDAY PARTY INCOMING BIRTHDAY PARTY INCOMING BIRTHDAY PARTY INCOMING BIRTHDAY PARTY INCOMING BIRTHDAY PARTY INCOMING BIRTHDAY PARTY INCOMING</div>
+            <div style="background-color: #000; max-width: 50em; text-align: left; padding: 1em;">
+                <h2 style="text-align:center;">I am turning 35*</h2>
+                <p>
+                    To celebrate, I am having a party on Saturday, Dec 28th at <a href="https://maps.app.goo.gl/HHqnNNV5EwMSrnYL8" target="_blank">Warehouse Climbing Co</a> from 6-10pm.
+                    There will be climbing, food, ping pong, and games. It is going to be a casual open house affair. Unless the spirit truly moves you, no gifts -- I just want to spend some time with friends.
+                </p>
+
+                <p>
+                    If you want to climb:
+                    <ul>
+                        <li>You will need to fill out a waiver. You can do that <a href="https://waiver.smartwaiver.com/w/gk7i9uswegrt4tvgssztkn/web/" target="_blank">here</a> After you submit it, check your email. You need to click a confirmation link</li>
+                        <li>Wear comfortable clothes</li>
+                        <li>Climbing shoes will be provided</li>
+                    </ul>
+                </p>
+
+                <p>
+                    If you don't want to climb -- don't let that stop you from coming! There will be food and games and a place to hang out.
+                </p>
+
+                Just as a warning, the gym can be a little chilly, so wear a sweater! Hope to see you there!
+                <br/><br/>
+                <strong>Please RSVP here: <a href="https://forms.gle/7Q6Q6Q7Q6Q7Q6Q7Q6" target="_blank">RSVP</a></strong>
+                <br/><br/>
+                <div>* My actual birthday is Jan 2nd, but Dec 28th is a more convienient day to celebrate</div>
+            </div>
+            <br>
+            <br>
+            <h1> Sign the guest book below:</h1>
+            <img src="construction.webp" alt="Under Construction" height="300">
+        </center>
+    </body>
+    <script>
+    let blinkers = document.getElementsByClassName('blink');
+    for(var i = 0; i < blinkers.length; i++) {
+        let blink = blinkers[i];
+        window.setInterval(() => {
+            blink.style.visibility = blink.style.visibility === 'hidden' ? 'visible' : 'hidden';
+        }, 500);
+    }
+
+    let marquee = (elm, left) => {
+        window.setInterval(() => {
+            let content = elm.innerHTML;
+            if(left) {
+                content = content.substring(1) + content[0];
+            }else {
+                content = content[content.length - 1] + content.substring(0, content.length - 1);
+            }
+            elm.innerHTML = content;
+        }, 500);
+    };
+
+    let left = document.getElementsByClassName('marquee-left');
+    let right = document.getElementsByClassName('marquee-right');
+    for(var i = 0; i < left.length; i++) {
+        marquee(left[i], true);
+    }
+    for(var i = 0; i < right.length; i++) {
+        marquee(right[i], false);
+    }
+    </script>
+</html>
