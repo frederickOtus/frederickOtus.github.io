@@ -24,6 +24,20 @@
         p {
             margin: 1em;
         }
+
+        #img-banner {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: no-wrap;
+        }
+        @media (width <= 1250px) {
+            #img-banner {
+                flex-direction: column;
+            }
+        }
+
+        
         </style>
     </head>
 
@@ -32,10 +46,10 @@
             <h1 style="color: #f5ec42" class="blink">!!! ATTENTION !!!</h1>
             <div class="marquee marquee-left">BIRTHDAY PARTY INCOMING BIRTHDAY PARTY INCOMING BIRTHDAY PARTY INCOMING BIRTHDAY PARTY INCOMING BIRTHDAY PARTY INCOMING BIRTHDAY PARTY INCOMING BIRTHDAY PARTY INCOMING BIRTHDAY PARTY INCOMING BIRTHDAY PARTY INCOMING</div>
 
-            <div>
-            <img src="babygif.webp">
-            <img src="peter.jpg" alt="Peter" width="300" height="400">
-            <img src="babygif.webp">
+            <div id="img-banner">
+                <img src="babygif.webp">
+                <img src="peter.jpg" alt="Peter" width="300" height="400">
+                <img src="babygif.webp">
             </div>
 
             <div class="marquee marquee-right">BIRTHDAY PARTY INCOMING BIRTHDAY PARTY INCOMING BIRTHDAY PARTY INCOMING BIRTHDAY PARTY INCOMING BIRTHDAY PARTY INCOMING BIRTHDAY PARTY INCOMING BIRTHDAY PARTY INCOMING BIRTHDAY PARTY INCOMING BIRTHDAY PARTY INCOMING</div>
@@ -61,7 +75,7 @@
 
                 Just as a warning, the gym can be a little chilly, so wear a sweater! Hope to see you there!
                 <br/><br/>
-                <strong>Please RSVP here: <a href="https://forms.gle/7Q6Q6Q7Q6Q7Q6Q7Q6" target="_blank">RSVP</a></strong>
+                <strong>Please RSVP here: <a href="https://docs.google.com/forms/d/e/1FAIpQLScv6npFiYg9o0ai2Ph5uHTL5l4GKxWCEeZXJgMrHW2YHR9fRw/viewform?usp=header" target="_blank">RSVP</a></strong>
                 <br/><br/>
                 <div>* My actual birthday is Jan 2nd, but Dec 28th is a more convienient day to celebrate</div>
             </div>
